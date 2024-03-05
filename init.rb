@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'territory'
 
-data = File.read('example.svg')
+data = File.read('input.svg')
 output = data.dup
 
 output.gsub!("</svg>", "")
@@ -15,7 +15,7 @@ output.gsub!("</svg>", "")
 
 
   center = Territory.centroid(feature_poly)
-  output += "<circle r='10' cx='#{center[:geometry][:coordinates][0]}' cy='#{center[:geometry][:coordinates][1]}' fill='red' />"
+  output += "<circle r='5' cx='#{center[:geometry][:coordinates][0]}' cy='#{center[:geometry][:coordinates][1]}' fill='red' />"
 
 end
 
