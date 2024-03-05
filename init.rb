@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'polylabel'
 require 'territory'
 
 data = File.read('input.svg')
@@ -13,10 +14,13 @@ output.gsub!("</svg>", "")
   coord_array.push(coord_array[0])
   feature_poly = Territory.polygon([coord_array])
 
+  centroid = Territory.centroid(feature_poly)
+  output += "<circle r='5' cx='#{centroid[:geometry][:coordinates][0]}' cy='#{centroid[:geometry][:coordinates][1]}' fill='red' />"
 
-  center = Territory.centroid(feature_poly)
-  output += "<circle r='5' cx='#{center[:geometry][:coordinates][0]}' cy='#{center[:geometry][:coordinates][1]}' fill='red' />"
+  inaccessable_center = Polylabel.compute(feature_poly[:geometry][:coordinates])
+  output += "<circle r='5' cx='#{inaccessable_center[:x]}' cy='#{inaccessable_center[:y]}' fill='orange' />"
 
+  puts inaccessable_center
 end
 
 File.open('output.svg', 'w+') do |f|

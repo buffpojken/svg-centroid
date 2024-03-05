@@ -9,13 +9,17 @@ GEM
   specs:
     nokogiri (1.16.2-arm64-darwin)
       racc (~> 1.4)
+    pqueue (2.1.0)
     racc (1.7.3)
+    ruby-polylabel (0.1.0)
+      pqueue (~> 2.1.0)
 
 PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
   nokogiri
+  ruby-polylabel
   territory!
 
 BUNDLED WITH

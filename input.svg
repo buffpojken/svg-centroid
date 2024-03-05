@@ -1,4 +1,4 @@
-<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
 
   <!-- Slightly complex poly -->
   <polygon points="200,10 250,190 150,190" style="fill:lime;stroke:purple;stroke-width:3" />
@@ -9,4 +9,9 @@
   <!-- More standard poly -->
   <polygon points="220,210 300,410 170,450 123,434" style="fill:lime;stroke:purple;stroke-width:3" />
 
+  <!-- Convex poly -->
+  <polygon points="566,260 504,441 713,441 773,239 555,92 696,359 576,395 "></polygon>
+
+  <!-- Even weirder -->
+  <polygon points="100,428 166,430 109,369 171,337 78,305 33,410 80,342 53,550 221,548 98,524 384,501 367,466 132,495 "></polygon>
 </svg>
