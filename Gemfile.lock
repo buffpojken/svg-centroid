@@ -1,0 +1,22 @@
+GIT
+  remote: https://github.com/welcome-to-co/territory.git
+  revision: afc7f9445f7bb235ecb1215746b9f724509c898b
+  specs:
+    territory (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    nokogiri (1.16.2-arm64-darwin)
+      racc (~> 1.4)
+    racc (1.7.3)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  nokogiri
+  territory!
+
+BUNDLED WITH
+   2.3.21

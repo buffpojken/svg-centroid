@@ -1,0 +1,9 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="200,10 250,190 150,190" style="fill:lime;stroke:purple;stroke-width:3" />
+
+  <!-- Example of a polygon with the default fill -->
+  <polygon points="0,100 50,25 50,75 100,0" />
+
+  <!-- Example of the same polygon shape with stroke and no fill -->
+  <polygon points="100,100 150,25 150,75 200,0" fill="none" stroke="black" />
+<circle r='10' cx='200' cy='130' fill='red' /><circle r='10' cx='50' cy='50' fill='red' /><circle r='10' cx='150' cy='50' fill='red' /></svg>
