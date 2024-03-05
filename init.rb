@@ -19,7 +19,7 @@ output.gsub!("</svg>", "")
 
 end
 
-File.open('centered.svg', 'w+') do |f|
+File.open('output.svg', 'w+') do |f|
   output += "</svg>"
   f.puts output
 end
